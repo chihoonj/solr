@@ -1,0 +1,4 @@
+{{ object.text }}
+{{ object.created_date }}
+{{ object.text }}
+{{ object.title }}

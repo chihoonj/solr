@@ -1,0 +1,9 @@
+{% extends 'search/base.html' %}
+{% block content %}
+    {{ posts }}
+    {% for post in posts %}
+        <div>{{ post.published_date }}</div>
+        <div>{{ post.title }}</div>
+        <div>{{ post.text|linebreaksbr }}</div>
+    {% endfor %}
+{% endblock content %}

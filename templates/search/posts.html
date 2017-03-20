@@ -1,0 +1,16 @@
+{% extends 'search/base.html' %}
+
+{% block content %}
+<form type="get" action=".">
+	<input type="text" name="q">
+	<button type="submit">Search</button>
+</form>
+
+{% for post in posts %}
+<h1>{{ post.title_t }}</h1>
+<p>
+	{{ post.text }}
+</p>
+{% endfor %}
+{% endblock %}
+
